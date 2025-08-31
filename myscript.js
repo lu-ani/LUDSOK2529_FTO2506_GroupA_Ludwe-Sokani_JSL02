@@ -22,3 +22,11 @@ while (
 
 console.log(TaskTitle1, ": ", TaskStatus1);
 
+// check if the status is done or not and return the required message
+
+if (TaskStatus1 !== "done") {
+  console.log("No tasks completed, let's get to work!");
+} else {
+  console.log("Title: Make corrections to JSL01, status: done");
+}
+
