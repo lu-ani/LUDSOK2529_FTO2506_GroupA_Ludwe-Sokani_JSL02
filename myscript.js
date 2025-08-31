@@ -30,3 +30,28 @@ if (TaskStatus1 !== "done") {
   console.log("Title: Make corrections to JSL01, status: done");
 }
 
+// repeat everything but for task 2
+
+let TaskTitle2 = prompt("Enter Task 2 title: ");
+
+let TaskDetails2 = prompt("Enter the Task 2 description: ");
+
+let TaskStatus2 = prompt("Enter Task 2 status: ").toLowerCase();
+
+while (
+  TaskStatus2 !== "todo" &&
+  TaskStatus2 !== "doing" &&
+  TaskStatus2 !== "done"
+) {
+  TaskStatus2 = prompt(
+    "Enter Task 2 Status: (todo, doing or done)"
+  ).toLowerCase();
+}
+
+console.log(TaskTitle2, ": ", TaskStatus2);
+
+if (TaskStatus2 !== "done") {
+  console.log("No tasks completed, let's get to work!");
+} else {
+  console.log("Title: Make corrections to JSL01, status: done");
+}
