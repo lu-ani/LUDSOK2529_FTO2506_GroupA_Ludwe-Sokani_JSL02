@@ -17,3 +17,8 @@ while (
     "Enter Task 1 Status: (todo, doing or done)"
   ).toLowerCase();
 }
+
+// return the task title and status like the example
+
+console.log(TaskTitle1, ": ", TaskStatus1);
+
